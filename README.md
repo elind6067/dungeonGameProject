@@ -44,7 +44,9 @@ This ensures the penalty increases as the player delves deeper into the dungeon.
   - Experience system with leveling up 
   - Boss battle with multi-phase combat 
   - Save/Load system for persistent progress 
-  - Graphical text formatting for immersion 
+  - Graphical text formatting for immersion
+7. Conclusion 
+The enhanced dungeon crawler successfully implements all required features: progressive difficulty, increasing rewards, a functional coin system, and a flee mechanic consistent with the assignment specification. Additional features significantly enrich gameplay and demonstrate thoughtful engaging design. The movement, combat, item systems, and adaptive rooms create a cohesive and enjoyable game world. 
 
  
 
