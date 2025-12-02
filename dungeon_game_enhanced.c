@@ -1,3 +1,8 @@
+/* student name: Aisha Muftau
+   student name: Ella Lind
+   date: 12/03/2025
+   Introduction To Software Engineering
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -318,6 +323,7 @@ Room* createDungeon(int numRooms) {
         if (i == 0) {
             head = current = createRoom(i, numRooms);
         } else {
+            prev = current;
             current->next = createRoom(i, numRooms);
             current = current->next;
             current->previous = prev;
@@ -850,7 +856,8 @@ void playerAction(Player* player, Room* room, int roomIndex) {
             
         case 6: // Flee (monster only)
             if (room->type == MONSTER) {
-                int fleeCost = roomIndex * 15;
+                int fleeCost = (roomIndex + 1) * 10;   
+                printf("Flee cost: %d gold.\n", fleeCost);
                 if (player->coins >= fleeCost) {
                     player->coins -= fleeCost;
                     printf("You pay %d gold to retreat safely!\n", fleeCost);
@@ -918,6 +925,5 @@ void playGame(int numRooms) {
     
     printf("\n============================================\n");
     printf("Thank you for playing DUNGEON AISHELLA!\n");
-    printf("May the spirits of Aisha and Ella guide you.\n");
     printf("============================================\n");
 }
